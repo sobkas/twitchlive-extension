@@ -16,7 +16,8 @@ class StreamerMenuItem extends PopupMenu.PopupBaseMenuItem {
     this._streamer = streamername;
 
     this._layout = {};
-    this._wrapBox = new St.BoxLayout({ vertical: true });
+    this._wrapBox = new St.BoxLayout();
+    this._wrapBox.set_orientation(1);
     this._firstLine = new St.BoxLayout();
 
     this._layout.streamer_icon = Icons.get_streamericon(login, "streamer-icon streamer-menuitem");

@@ -324,9 +324,9 @@ const ExtensionLayout = GObject.registerClass(
       else {
         this.spacer.actor.show();
         // gather sizes
-        let sizes = menuItems.map(get_size_info).reduce(max_size_info, [0,0,0,0]);
+        //let sizes = menuItems.map(get_size_info).reduce(max_size_info, [0,0,0,0]);
         // set sizes
-        menuItems.map((item) => apply_size_info(item, sizes));
+        //menuItems.map((item) => apply_size_info(item, sizes));
       }
       this.layoutChanged = false;
     };
